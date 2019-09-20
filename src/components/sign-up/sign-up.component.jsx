@@ -11,7 +11,7 @@ class SignUp extends React.Component {
     constructor() {
         super();
 
-        this.sate = {
+        this.state = {
             displayName: '',
             email: '',
             password: '',
