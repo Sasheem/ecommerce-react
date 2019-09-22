@@ -9,7 +9,7 @@ import ShopPage from './pages/shop/shop.component';
 import SignUpAndSignInPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import Header from './components/header/header.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
-import { setCurrentUser } from './redux/user/user.action';
+import { setCurrentUser } from './redux/user/user.actions';
 
 /**
  * converting from functional component to class component
