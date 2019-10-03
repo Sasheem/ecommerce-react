@@ -13,8 +13,10 @@ const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
          * * remember match has the base url and your appending the
          * * menu item name to route to appropriate page
          */
+        console.log(`match object: ${JSON.stringify(match)}`);
+        console.log(`MenuItem linkUrl: ${linkUrl}`);
         history.push(`${match.url}${linkUrl}`);
-		console.log(history);
+		console.log(`history from inside MenuItem: ${JSON.stringify(history)}`);
         
     }}>
         <div 

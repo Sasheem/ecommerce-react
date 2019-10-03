@@ -7,18 +7,18 @@ import { selectDirectorySections } from '../../redux/directory/directory.selecto
 import MenuItem from '../menu-item/menu-item.component';
 
 import './directory.styles.scss';
-
+/**
+ * * Using ...otherSectionProps passes any props that have a value
+ * * with the same naming convention
+ * ? title={title} linkUrl={linkUrl}
+ * * makes things more simple
+ */
 // class because we need to store state of the menu items
 // and create are menu items with
 const Directory = ({ sections }) => (
 	<div className='directory-menu'>
-		{/**
-		 * * Using ...otherSectionProps passes any props that have a value
-		 * * with the same naming convention
-		 * ? title={title} linkUrl={linkUrl}
-		 * * makes things more simple
-		 */
-		sections.map(({ id, ...otherSectionProps }) => (
+		{sections.map(({ id, ...otherSectionProps }) => (
+			
 			<MenuItem key={id} {...otherSectionProps} />
 		))}
 	</div>
